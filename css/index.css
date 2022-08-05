@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial;
+}
+
+.main-div::before {
+    content: "";
+    background: url("/images/backcover.svg") no-repeat bottom left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 634px;
+    height: 590px;
+    z-index: -1;
+}
+
+nav img {
+    cursor: pointer;
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px 20px 120px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.nav-item {
+    font-size: 15px;
+    color: #3B3D85;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.signin-btn {
+    padding: 4px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(to right, #965CF2, #FF8ADC);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section h1 {
+    color: #3B3D85;
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+.left-section h4 {
+    color: #55597D;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    width: 246px;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.learn-more-btn {
+    padding: 9px 26px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(to right, #965CF2, #FF8ADC);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 24px;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.imgs-div {
+    position: relative;
+}
+
+img[alt="vector-img"] {
+    position: absolute;
+    left: 35px;
+    bottom: 65px;
+    width: 70px;
+}
+
+img[alt="vector-dot"] {
+    position: absolute;
+    bottom: 130px;
+    left: 75px;
+    width: 14px;
+}
+
+img[alt="intro-img"] {
+    width: 530px;
+}
