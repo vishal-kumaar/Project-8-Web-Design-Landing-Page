@@ -6,7 +6,7 @@
 
 .main-div::before {
     content: "";
-    background: url("/images/backcover.svg") no-repeat bottom left;
+    background: url("/asset/images/backcover.svg") no-repeat bottom left;
     position: absolute;
     top: 0;
     right: 0;
@@ -50,6 +50,11 @@ nav {
     outline: none;
     cursor: pointer;
     border-radius: 16px;
+}
+
+.ham-burger {
+    width: 2rem;
+    display: none;
 }
 
 .intro-section {
@@ -109,4 +114,100 @@ img[alt="vector-dot"] {
 
 img[alt="intro-img"] {
     width: 530px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:900px) {
+    nav {
+        margin: 40px 30px 20px 30px;
+    }
+    .intro-section {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .left-section {
+        align-self: flex-start;
+    }
+    .imgs-div {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .nav-items {
+        display: none;
+    }
+    .signin-btn {
+        display: none;
+    }
+    .ham-burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .main-div::before {
+        width: 550px;
+        height: 450px;
+    }
+    img[alt="intro-img"] {
+        width: 400px;
+    }
+    img[alt="vector-img"] {
+        width: 55px;
+    }
+    img[alt="vector-dot"] {
+        bottom: 110px;
+        left: 66px;
+        width: 10px;
+    }
+    .left-section h1 {
+        margin-left: 60px;
+        font-size: 45px;
+    }
+    .left-section h4 {
+        margin-left: 60px;
+        margin-top: 15px;
+        font-size: 10px;
+        width: 50%;
+    }
+    .learn-more-btn {
+        margin-left: 60px;
+        margin-top: 25px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .main-div::before {
+        width: 450px;
+        height: 350px;
+    }
+    img[alt="intro-img"] {
+        width: 280px;
+    }
+    img[alt="vector-img"] {
+        width: 40px;
+        left: 25px;
+        bottom: 35px;
+    }
+    img[alt="vector-dot"] {
+        bottom: 68px;
+        left: 47px;
+        width: 8px;
+    }
+    .left-section h1 {
+        margin-left: 30px;
+        font-size: 40px;
+    }
+    .left-section h4 {
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .learn-more-btn {
+        margin-left: 30px;
+        font-size: 14px;
+    }
 }
