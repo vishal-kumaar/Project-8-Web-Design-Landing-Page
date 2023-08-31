@@ -1,6 +1,5 @@
 ## 🔗Project Link
-https://web-design-landing-site.vercel.app/
-
+https://vishal-kumaar.github.io/Project-8-Web-Design-Landing-Page/
 
 ## ✨ Project-8: Web Design Landing Page ✨
 
